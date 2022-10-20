@@ -1,0 +1,47 @@
+
+.eight-heading{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eight-heading{
+    padding:4rem 2rem ;
+}
+.eight-heading h1{
+    color:#4caa5b
+}
+.section_eight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    padding: 2rem;
+}
+.image-content .image-section{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+.content-section h5{
+    padding: 1rem;
+}
+.stars{
+    line-height:1.5rem
+}
+.stars h5{
+    font-size:1.3rem
+}
+.stars p{
+    font-size: .8rem;
+}
+.stars .star i{
+    color:gold
+}

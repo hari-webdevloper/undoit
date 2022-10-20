@@ -1,0 +1,319 @@
+#ind_sec_one{
+    position:relative;
+    width:100vw;
+    height: 100vh;
+}
+.background{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background:black;
+    clip-path: polygon(100% 50%, 0% 100%, 100% 100%);
+    z-index: -998;
+}
+.banner{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:20rem;
+padding: 0rem 20rem 0rem 4rem;
+}
+.banner{
+    padding-top:8rem;
+}
+.banner h1{
+    font-size: 4rem;
+}
+.banner>div:nth-of-type(1){
+    display:flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    gap:2rem;
+
+}
+.banner>div:nth-of-type(1) h1 span{
+    color: rgb(32, 85, 31)
+}
+.banner>div:nth-of-type(1) a{
+    margin-top:5rem;
+}
+.banner>div:nth-of-type(2){
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width:40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background: rgb(32, 85, 31);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -99;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: changesize 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.circle>div:nth-of-type(1){
+ width: 30rem;
+ height: 30rem;
+ background:#f0fff2;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ animation:revsize  2s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate-reverse;
+}
+.banner img{
+    width:24rem;
+}
+
+@keyframes changesize{
+   0%{
+    transform: scale(1);
+   }
+    100%{
+        transform: scale(1.2);
+    }
+}
+@keyframes revsize{
+    0%{
+     transform: scale(1);
+    }
+     100%{
+         transform: scale(1.2);
+     }
+ }
+ 
+ #ind_sec_two{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    width:100vw;
+    padding:8rem 0rem;
+ }
+ #ind_sec_two h1,#ind_sec_two h5{
+    color:white;
+ }
+ #ind_sec_two h5{
+    font-size:1.6rem;
+ }
+ #ind_sec_two h1 span{
+    color:#4caa5b;
+
+ }
+.steps{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100vw;
+padding:4rem 0rem 0rem;
+}
+ .steps .step{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:1rem;
+    position: relative;
+    top:100px;
+    opacity:0;
+    transition:all .7s ease-in-out 
+ }
+ .steps div>div{
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15rem;
+    height: 15rem;
+    border-radius: 2rem;
+ }
+ .steps div>div i{
+    font-size: 4rem;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+ }
+ .steps div span{
+    color:white;
+    font-size:1.2rem;
+    color:#4caa5b;
+    font-weight: 500;
+    width:20rem;
+ }
+
+.steps .cont{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.steps .cont p{
+    color:#4caa5b;
+}
+#sec_three img{
+    position: relative;
+    transition:all .7s ease-in-out;
+    opacity:0;
+}
+#sec_three .steps:nth-of-type(1) img{
+    width:25rem
+}
+#sec_three .steps:nth-of-type(2) img{
+    width:20rem;
+}
+#sec_three .steps:nth-of-type(3) img{
+    width:30rem;
+}
+
+#sec_three .steps div.sec_img img{
+    width:30rem;
+    height:20rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+
+#sec_four,#sec_eight{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+ margin:15rem 0rem 4rem;
+ background:url('../images/car.jpg') no-repeat ;
+ background-size: cover;
+ width:100vw;
+ color:white;
+ position: relative;
+
+}
+#sec_eight{
+    margin:4rem 0rem ;
+}
+#sec_four .sec_four_heading,#sec_eight .sec_four_heading{
+    display:flex;
+    flex-direction: column;
+    padding:0rem 4rem;
+    gap:2rem;
+}
+#sec_four .bg,#sec_eight .bg{
+    background:linear-gradient(45deg,rgba(5, 5, 38,0.7),rgba(25, 0, 0,0.7));
+    padding:4rem 0rem;
+}
+#sec_four .steps .step,#sec_eight .steps .step{
+    background:rgb(16, 16, 50);
+    border-radius: 2rem;
+    padding:2rem;
+    width:30rem;
+}
+#sec_four .steps .step h1{
+    font-size:2rem;
+}
+#sec_four .steps .step section,#sec_eight .steps .step section{
+    display:flex;
+    justify-content: space-between;
+}
+#sec_four .steps .step section span,#sec_eight .steps .step section span{
+    width:4rem;
+    height:4rem;
+    background:#4caa5b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+#eeight,#nine{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom:4rem;
+}
+#sec_three .steps:nth-of-type(1) img{
+    width:30rem;
+    height:20rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+#sec_eight{
+    background:url('../images/family.jpg') no-repeat ;
+    background-size: cover;
+}
+
+
+.padding{
+    padding:4rem 0rem 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:670px){
+  
+    .banner{
+        flex-direction: column;
+        gap:1rem;
+        padding:0;
+        padding-top:8rem;
+    }
+    .banner h1{
+        font-size: 3rem;
+    }
+    .banner>div:nth-of-type(1){
+        order:2;
+        justify-content: center;
+        align-items: center;
+    } 
+    .banner>div:nth-of-type(2){
+        order:1
+    } 
+    .banner img{
+        width:17rem;
+    }
+    .circle{
+        width:30rem;
+        height: 30rem;
+    }
+    .circle>div:nth-of-type(1){
+        width:20rem;
+        height:20rem;
+    }
+    .background{
+      display: none;
+    }
+    .steps{
+        flex-direction: column;
+        gap:5rem
+    }
+    .steps .step{
+        top:50px;
+    }
+    #sec_three .steps:nth-of-type(2) .cont{
+        order:2;
+    }
+    #sec_three .steps:nth-of-type(4) .cont{
+        order:2
+    }
+    .paddingfoot{
+        padding:15rem 0rem 0rem 0rem;
+    }
+    
+}

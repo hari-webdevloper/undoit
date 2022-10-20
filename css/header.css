@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    padding:0 ; margin:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+  
+}
+
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+}
+
+/* header part */
+header{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem 4rem;
+    position: fixed;
+    top:0px;
+    z-index: 9990;
+    font-size:1.2rem;
+    background:transparent;
+    transition: all .4s ease-in;
+}
+
+header img{
+    width:9.5rem;
+    cursor:pointer;
+}
+ header nav{
+    position:relative;
+}
+main header nav.activate{
+display:flex;
+}
+header nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:300;
+    transition:all .7s ease-in-out;
+    cursor:pointer
+}
+
+header nav a:hover,.ls a:hover,.profile a:hover{
+    color:#89EE15;
+}
+header nav a:hover>.fa-solid{
+    -webkit-text-stroke: .5px #89EE15
+}
+ nav .fa-solid{
+    color:black;
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
+    vertical-align: middle;
+    transition:all .7s ease-in-out;
+
+}
+main nav i.chevron{
+    -webkit-text-stroke: .5px #89EE15;
+    transform:rotate(180deg);
+}
+header nav:nth-of-type(1),header nav:nth-of-type(2){
+    display:flex;
+    gap:4rem;
+    align-items: center;
+}
+nav .service{
+    position:absolute;
+    color:white;
+    top:3rem;
+    background: rgb(32, 85, 31);
+    display:flex;
+    justify-content:space-between;
+    width:75rem;
+    padding:3rem 4rem;
+    border-radius: 2rem;
+    clip-path: circle(0% at 0% 0%);
+    z-index:9991 ;
+    transition:all .7s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+}
+.service p{
+    color:#89EE15;
+    border-bottom:1px solid #89EE15;
+    padding-bottom: 1rem;
+}
+.service-1,.service-2,.service-3{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.service-2 div{
+    display:flex;
+    gap:3rem;
+}
+.service-2 div span{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+main header .reveal_drop_down{
+    clip-path: circle(150% at 100% 100%);
+}
+.active{
+    color:#89EE15;
+}
+.company{
+    position: absolute;
+    background:rgb(32, 85, 31);
+    padding:2rem 2rem;
+    border-radius:1.5rem;
+    z-index: 9990;
+    top:3rem;
+    left:10rem;
+    width:23rem;
+    clip-path: circle(0% at 0% 0%);
+    transition:all .7s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
+.company a:not(.last){
+    margin-right: 1rem;
+}
+.profile a,.ls a{
+    color:white;
+    text-decoration: none;
+    transition:all .7s ease-in-out;
+}
+.profile span{
+    width:40px;
+    height:40px;
+    background:white;
+    margin-right:3rem;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    text-align:center;
+}
+.profile img{
+    width:35px;
+    height:35px;
+    object-fit: cover;
+    border-radius: 50%;
+    position:relative;
+    margin-top:2px;
+}
+header i.menu{
+    font-size:20px;
+    display:none;
+    cursor:pointer;
+}
+
+
+
+
+@media(max-width:904px){
+html{
+    font-size:55%
+}
+}
+@media(max-width:731px){
+    html{
+        font-size:50%;
+    }
+}
+@media(max-width:670px){
+    
+    header i.menu{
+        display:block;
+    }
+    nav:nth-of-type(1){
+        position:absolute;
+        top:50px;
+        right:10px;
+        flex-direction: column;
+       background: rgb(32, 85, 31);
+        width:20rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding-top:2rem;
+        box-shadow: rgb(0 0 0 / 50%) 0px 4px 12px;
+    }
+    nav:nth-of-type(2){
+        position:absolute;
+        top:169px;
+        right:10px;
+        flex-direction: column;
+      background: rgb(32, 85, 31);
+        width:20rem;
+        padding:3rem 0rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    nav .service{
+        right:17rem;
+        flex-direction: column;
+        width:43rem;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+    }
+    nav .service p{
+        padding-top:10px;
+    }
+    .company{
+        position:absolute;
+        left:-170px;
+        top:7rem;
+    }
+    .ls,.profile{
+     position:absolute;
+     right:70px;
+    }
+main header .nav{
+    display:none;
+}
+}

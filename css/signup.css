@@ -1,0 +1,55 @@
+#signup,#login{
+    width:100vw;
+    height: 100vh;
+    background:black url('../images/signupbg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#f0fff2;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:4rem;
+}
+#signup form,#login form{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    background:rgba(255, 255, 255,0.09);
+    padding:3rem 6rem;
+    border-radius: 2rem;
+    box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;}
+#signup form input,#login form input{
+    border:1px solid  rgb(32, 85, 31);
+    background:none;
+    padding:.5rem 1rem;
+    color:rgb(6, 29, 16);
+    transition:all .7s ease-in-out;
+    outline:none;
+    border-radius: 5px;
+}
+#signup form input:focus,#login form input:focus{
+    border-color:rgb(6, 29, 16);
+    box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;}
+
+
+#signup form label,#login form label{
+    color:rgb(6, 29, 16);
+    font-weight: 500;
+}
+.black h1{
+    margin-right:10rem;
+    color:rgb(6, 29, 16);
+}
+#signup input[type='submit']:hover,#login input[type="submit"]:hover{
+    color:white;
+ background: #4caa5b;
+ box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;}
+::placeholder{
+    color: rgb(32, 85, 31);
+}

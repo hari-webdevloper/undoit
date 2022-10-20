@@ -1,0 +1,148 @@
+#sellScrap{
+   width:100vw;
+   height:100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   background-color: #f0fff2;
+   
+}
+#sellScrap form {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:12rem;
+   padding:5rem;
+   border-radius: 2rem;
+   position: relative;
+   background-color: #f0fff2;
+   z-index: 8888;
+}
+#sellScrap form input[type="text"]{
+    border:.1rem solid green;
+    background:none;
+    padding:.5rem 1rem;
+    border-radius: 1rem;
+    outline:none;
+}
+#sellScrap #scrapImg{
+    display: flex;
+    flex-direction:column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#sellScrap #scrapImg span{
+    display: inline-block;
+    width:4rem;
+    height: 4rem;
+    background:green;
+    color:white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   left:9rem;
+   cursor:pointer;
+   transition: all .7s ease-in-out;
+}
+#sellScrap #scrapImg span:hover{
+background: #f0fff2;
+color:black;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+}
+#boost{
+  width:48.9rem;
+  height:32rem;
+    background:#4caa5b;
+    position: absolute;
+    z-index:8887;
+   border-radius:2rem;
+   left:40rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity:0;
+   transition:all .7s ease-in-out;
+
+
+}
+#boost.a{
+    animation:a 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#sellScrap #scrapImg input[type="file"]{
+    display: none;
+}
+#sellScrap #scrapImg img{
+    width:10rem;
+    height:10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#sellScrap form div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    gap:.3rem;
+}
+#sellScrap form input[type="submit"]{
+    outline:none;
+    border:none;
+    padding:.5rem 1rem;
+    margin-top:3rem;
+}
+
+@keyframes a {
+    0%{
+        left:40%;
+    }
+    50%{
+        left:-35%;
+        opacity:1;
+    }
+    100%{
+        z-index: 8889;
+       left:31%;
+       opacity:1;
+    }
+}
+@media(max-width:898px){
+    @keyframes a {
+        0%{
+            left:40%;
+        }
+        50%{
+            left:-35%;
+            opacity:1;
+        }
+        100%{
+            z-index: 8889;
+           left:25%;
+           opacity:1;
+        }
+    } 
+}
+
+@media(max-width:670px){
+    @keyframes a {
+        0%{
+            left:40%;
+        }
+        50%{
+            left:-35%;
+            opacity:1;
+        }
+        100%{
+            z-index: 8889;
+           left:10%;
+           opacity:1;
+        }
+    }
+  
+}

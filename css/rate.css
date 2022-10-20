@@ -1,0 +1,107 @@
+#r-1{
+    margin-top:5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    padding-top:2rem;
+}
+#search-box{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+#search-box i{
+font-size: 1.6rem;
+}
+#search-box input{
+    width: 100%;
+    padding:1rem ;
+    border:none;
+    border-bottom: 1px solid black;
+    outline:none;
+}
+#r-button{
+    display: flex;
+    gap:1rem;
+}
+#r-button .btn-value{
+    padding:.5rem 5rem;
+    border-radius: 1rem;
+    background:#f0fff2;
+   outline:none;
+   border:none;
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+#scrap-list{
+    padding:2rem 4rem;
+}
+#scrap-list #list{
+    padding:2rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:30rem;
+}
+#scrap-list #list #content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:1rem;
+    width:25rem;
+}
+#list img{
+    width:20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+#rates #r{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+#rates{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+#rates a {
+    text-decoration: none;
+    color:black
+}
+#rates button{
+    background:#f0fff2;
+    padding:1rem 2rem;
+    border:none;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+}
+
+#list{
+    border-bottom:1px solid black;
+}
+#scrap-list #list.hide{
+    display: none;
+}
+@media (max-width:670px){
+#r-button{
+    width:70%;
+    display:flex;
+     flex-wrap: wrap;
+}
+#scrap-list #list{
+        flex-direction: column;
+        gap:5rem;
+    }
+}
